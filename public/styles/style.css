@@ -1,9 +1,15 @@
+.wrapper-calendar {
+  padding: 1rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 :host {
   --bg: $ {
-    this.theme=== 'dark' ? '#111' : '#fff';
+    this.theme==='dark'? '#111' : '#fff';
   }
   --fg: $ {
-    this.theme=== 'dark' ? '#eee' : '#111';
+    this.theme==='dark'? '#eee' : '#111';
   }
 }
 
