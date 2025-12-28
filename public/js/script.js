@@ -104,11 +104,11 @@ function renderCalendar(containerId) {
   header.className = 'nav';
 
   const prev = document.createElement('button');
-  prev.textContent = '◀';
+  prev.textContent = '<ion-icon name="caret-back"></ion-icon>';
   prev.onclick = () => changeMonth(-1);
 
   const next = document.createElement('button');
-  next.textContent = '▶';
+  next.textContent = '<ion-icon name="caret-forward"></ion-icon>';
   next.onclick = () => changeMonth(1);
 
   const title = document.createElement('h2');
