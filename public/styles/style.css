@@ -4,17 +4,8 @@
   padding: 0;
   font-family: Arial, sans-serif;
 }
-:host {
-  --bg: $ {
-    this.theme==='dark'?'#111': '#fff';
-  }
-  --fg: $ {
-    this.theme==='dark'?'#eee': '#111';
-  }
-}
 body {
-  background: var(--bg);
-  color: var(--fg);
+  background: #222;
 }
 .wrapper-calendar {
   height: 100vh;
@@ -22,47 +13,4 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-}
-.nav button {
-  font-size: 1.5rem;
-  color: var(--fg);
-  display: flex;
-  align-items: center;
-  background: none;
-  cursor: pointer;
-  border: none;
-}
-.day {
-  background: var(--bg);
-  color: var(--fg);
-}
-.month {
-  margin-bottom: 2rem;
-}
-
-.month h2 {
-  margin-bottom: 0.5rem;
-}
-
-.days {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 4px;
-}
-
-.day {
-  padding: 10px;
-  text-align: center;
-  border: 1px solid #ccc;
-}
-
-.neutral {
-  background: #000;
-  color: #fff;
 }
